@@ -1,0 +1,51 @@
+/*-Body-*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*-Main-*/
+main {
+  flex: 1 0 auto;
+}
+
+@font-face {
+	font-family: "LordFont1";
+	src: url('../font/Minecraft.ttf');
+}
+
+.command {
+  font-family: "LordFont1", sans-serif;
+}
+
+.title {
+  padding-top: 120px;
+}
+
+.section-title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  color: white;
+  padding-top: 10px;
+}
+
+.lordContent {
+  background-color: rgba(64,64,64, 0.65);
+  /*background-color: RED;*/
+}
+
+.logo {
+  height: 195px;
+}
+
+.section-logo {
+  height: 100px;
+}
+
+.ancre {
+  padding-top: 335px;
+}
