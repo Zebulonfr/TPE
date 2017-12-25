@@ -43,7 +43,8 @@ main {
 }
 
 .section-logo {
-  height: 100px;
+  padding-top: -100px;
+  height: 25%;
 }
 
 .ancre {
