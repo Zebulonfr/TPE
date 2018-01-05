@@ -3,20 +3,13 @@
 
    if (isset($_GET['def'])) {
      $defAsk = $_GET['def'];
-     echo $defAsk;
 
-     $requdef = $bdd->query('SELECT * FROM definition WHERE mot = ?');
-     $requdef->execute(array($defAsk));
+     $requdef = $bdd -> prepare('SELECT * FROM definition WHERE mot = ?');
+     $requdef -> execute(array($defAsk));
      $def = $requdef->fetch();
-     $defExist = $def->rowCount();
 
-     if ($defExist == 1) {
-       $mot = $def['mot'];
-       $definition = $def['definition'];
-     }
-     else {
-       header('Location: ..');
-     }
+     $mot = $def['mot'];
+     $definition = $def['definition'];
    }
    else {
      header('Location: ..');
@@ -24,7 +17,7 @@
 ?>
 <html>
    <head>
-      <title>TPEtesting</title>
+      <title>Definition - <?php echo $mot; ?></title>
       <meta charset="utf-8">
       <link rel="icon" type="image/png" href="../img/icon/favicon.png" />
       <link rel="stylesheet" type="text/css" href="../css/style.css">
