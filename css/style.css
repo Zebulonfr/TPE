@@ -10,15 +10,6 @@ main {
   flex: 1 0 auto;
 }
 
-@font-face {
-	font-family: "LordFont1";
-	src: url('../font/Minecraft.ttf');
-}
-
-.command {
-  font-family: "LordFont1", sans-serif;
-}
-
 .title {
   padding-top: 120px;
 }
@@ -33,11 +24,6 @@ main {
   padding-top: 10px;
 }
 
-.lordContent {
-  background-color: rgba(64,64,64, 0.65);
-  /*background-color: RED;*/
-}
-
 .logo {
   height: 195px;
 }
@@ -47,6 +33,9 @@ main {
   height: 25%;
 }
 
-.ancre {
-  padding-top: 335px;
+.definition {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+
 }

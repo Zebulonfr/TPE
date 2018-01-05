@@ -51,7 +51,6 @@
                <li>
                   <a class="waves-effect waves-light btn-large grey darken-4" href="#!">Partie I</a>
                   <a class="waves-effect waves-light btn-large grey darken-4" href="#!">Partie II</a>
-                  <a class="waves-effect waves-light btn-large grey darken-4" href="#!">Partie III</a>
                </li>
                <li><br></li>
                <li>
