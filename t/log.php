@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (isset($_POST['formDone'])) {
-    if (isset($_POST['identif']) AND isset($_POST['pwd'])) {
+    if (!empty($_POST['identif']) AND !empty($_POST['pwd'])) {
       $iden = $_POST['identif'];
       $pwd = $_POST['pwd'];
 
