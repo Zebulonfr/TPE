@@ -7,9 +7,15 @@
      $requdef = $bdd -> prepare('SELECT * FROM definition WHERE mot = ?');
      $requdef -> execute(array($defAsk));
      $def = $requdef->fetch();
+     $defexist = $requdef->rowCount();
 
-     $mot = $def['mot'];
-     $definition = $def['definition'];
+     if ($defexist == 1) {
+       $mot = $def['mot'];
+       $definition = $def['definition'];
+     }
+     else {
+       $error = "Cette définition n'existe pas.";
+     }
    }
    else {
      header('Location: ..');
@@ -17,7 +23,17 @@
 ?>
 <html>
    <head>
-      <title>Definition - <?php echo $mot; ?></title>
+      <title>
+        <?php
+          if (isset($error)) {
+            echo "Definition";
+          }
+          else {
+            echo "Definition - " . $mot;
+          }
+        ?>
+
+      </title>
       <meta charset="utf-8">
       <link rel="icon" type="image/png" href="../img/icon/favicon.png" />
       <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -59,7 +75,12 @@
                <li>
                   <p style="font-size: 14pt">
                      <?php
-                        echo "<b>" . $mot . "</b> : " . $definition;
+                        if (isset($error)) {
+                          echo "<br>" . $error;
+                        }
+                        else {
+                          echo "<b>" . $mot . "</b> : " . $definition;
+                        }
                       ?>
                   </p>
                </li>
