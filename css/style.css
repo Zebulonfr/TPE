@@ -46,3 +46,7 @@ main {
 .intro {
   font-size: 15pts;
 }
+
+.quest {
+  color: grey;
+}
