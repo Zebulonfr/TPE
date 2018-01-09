@@ -37,5 +37,8 @@ main {
   text-decoration: underline;
   font-weight: bold;
   color: black;
+}
 
+.intro {
+  font-size: 15pts;
 }
