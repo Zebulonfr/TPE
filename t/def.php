@@ -40,7 +40,6 @@
       <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-      <script src="http://code.onion.com/fartscroll.js%22%3E"></script>
       <script src="../materialize/js/materialize.js"></script>
       <script type="text/javascript">
          $(document).ready(function(){

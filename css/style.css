@@ -33,9 +33,13 @@ main {
   height: 25%;
 }
 
-.definition {
+.def {
   text-decoration: underline;
   font-weight: bold;
+  color: black;
+}
+
+.plan {
   color: black;
 }
 
