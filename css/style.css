@@ -55,6 +55,10 @@ main {
   background-image: url("../img/parallax/fond-2.png");
 }
 
+.part2-background {
+  background-image: url("../img/parallax/fond-3.png");
+}
+
 .exp {
   text-transform: uppercase;
 }
