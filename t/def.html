@@ -1,26 +1,3 @@
-<?php
-   $bdd = new PDO('mysql:host=127.0.0.1;dbname=TPE;charset=utf8', 'root', '');
-
-   if (isset($_GET['def'])) {
-     $defAsk = $_GET['def'];
-
-     $requdef = $bdd -> prepare('SELECT * FROM definition WHERE mot = ?');
-     $requdef -> execute(array($defAsk));
-     $def = $requdef->fetch();
-     $defexist = $requdef->rowCount();
-
-     if ($defexist == 1) {
-       $mot = $def['mot'];
-       $definition = $def['definition'];
-     }
-     else {
-       $error = "Cette définition n'existe pas.";
-     }
-   }
-   else {
-     header('Location: ..');
-   }
-?>
 <html>
    <head>
       <title>
